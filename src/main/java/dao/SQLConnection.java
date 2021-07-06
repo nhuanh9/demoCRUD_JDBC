@@ -12,6 +12,7 @@ public class SQLConnection {
     protected Connection getConnection() throws ClassNotFoundException, SQLException {
         Connection connection = null;
         Class.forName("com.mysql.jdbc.Driver");
+        //DNA
         connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
         return connection;
     }
